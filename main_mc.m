@@ -6,9 +6,9 @@
 %lam1,lam2,lam3: parameters
 %tol:Threshold of convergence
 %recMatrix:obtain the prediction score matrix
-load interaction;
-load sd;
-load sm;
+interaction=csvread('interaction.csv');
+sd=csvread('kd.csv');
+sm=csvread('km.csv');
 norm=1;
 rank=3;
 iter=60;
